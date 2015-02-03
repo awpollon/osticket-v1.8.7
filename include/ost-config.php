@@ -40,7 +40,7 @@ define('ADMIN_EMAIL','aaron@aaronpollon.com');
 # Mysql Login info
 define('DBTYPE','mysql');
 define('DBHOST','localhost');
-define('DBNAME','awp1121_osticket');
+define('DBNAME','awp1121_osticket_prod');
 define('DBUSER','awp1121_osticket');
 define('DBPASS','RRH@!RXLtld0');
 
