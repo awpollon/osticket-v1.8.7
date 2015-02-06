@@ -395,9 +395,11 @@ if ($results) {
                         $lc=sprintf('<span class="Icon teamAssigned">%s</span>',Format::truncate($row['team'],40));
                     else
                         $lc=' ';
-                // }else{
-                    $lc=Format::truncate($row['dept_name'],40);
                 }
+				
+				//Aaron change: always get department name
+                    $deptCell=Format::truncate($row['dept_name'],40);
+                
                 $tid=$row['number'];
                 $subject = Format::htmlchars(Format::truncate($row['subject'],40));
                 $threadcount=$row['thread_count'];
@@ -447,6 +449,10 @@ if ($results) {
                 }
                 ?>
                 <td nowrap>&nbsp;<?php echo $lc; ?></td>
+                
+                //Aaron adding dept cell
+               <td nowrap>&nbsp;<?php echo $deptCell; ?></td>
+
             </tr>
             <?php
             } //end of while.
