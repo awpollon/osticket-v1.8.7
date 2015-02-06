@@ -395,7 +395,7 @@ if ($results) {
                         $lc=sprintf('<span class="Icon teamAssigned">%s</span>',Format::truncate($row['team'],40));
                     else
                         $lc=' ';
-                }else{
+                // }else{
                     $lc=Format::truncate($row['dept_name'],40);
                 }
                 $tid=$row['number'];
