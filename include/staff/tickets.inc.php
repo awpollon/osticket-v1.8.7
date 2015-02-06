@@ -397,7 +397,7 @@ if ($results) {
                         $lc=' ';
                 }
 				
-				//Aaron change: always get department name
+				// Aaron change: always get department name
                     $deptCell=Format::truncate($row['dept_name'],40);
                 
                 $tid=$row['number'];
@@ -450,7 +450,7 @@ if ($results) {
                 ?>
                 <td nowrap>&nbsp;<?php echo $lc; ?></td>
                 
-                //Aaron adding dept cell
+                <!-- Aaron adding dept cell -->
                <td nowrap>&nbsp;<?php echo $deptCell; ?></td>
 
             </tr>
