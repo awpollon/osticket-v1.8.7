@@ -1,3 +1,5 @@
+<!-- Test comment #2 -->
+
 <?php
 if(!defined('OSTSCPINC') || !$thisstaff || !@$thisstaff->isStaff()) die('Access Denied');
 
