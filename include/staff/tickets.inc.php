@@ -361,11 +361,13 @@ if ($results) {
                             title="Sort By Assignee <?php echo $negorder;?>">Assigned To</a></th>
                 <?php
                 }
-            } else {} ?>
+            } else {} 
+            
+            // ?>
                 <th width="150">
                     <a <?php echo $dept_sort; ?> href="tickets.php?sort=dept&order=<?php echo $negorder;?><?php echo $qstr; ?>"
                         title="Sort By Department <?php echo $negorder; ?>">Department</a></th>
-            <?php
+            // <?php
              ?>
         </tr>
      </thead>
