@@ -365,6 +365,7 @@ if ($results) {
                 }
             } else {} 
             
+// 			Aaron: Move dept. table out of if statement.
              ?>
                 <th width="150">
                     <a <?php echo $dept_sort; ?> href="tickets.php?sort=dept&order=<?php echo $negorder;?><?php echo $qstr; ?>"
@@ -446,7 +447,10 @@ if ($results) {
                 <?php
                 }
                 ?>
-                <td nowrap>&nbsp;<?php echo $lc; ?></td>
+                <!-- Aaron: Only print assignment cell if show assigned is true -->
+                <?php if($showassigned) { ?>
+                 <td nowrap>&nbsp;<?php echo $lc; ?></td>
+                <?php } ?>
                 
                 <!-- Aaron adding dept cell -->
                <td nowrap>&nbsp;<?php echo $deptCell; ?></td>
