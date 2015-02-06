@@ -1,5 +1,3 @@
-<!-- Test comment #2 -->
-
 <?php
 if(!defined('OSTSCPINC') || !$thisstaff || !@$thisstaff->isStaff()) die('Access Denied');
 
@@ -464,7 +462,9 @@ if ($results) {
     </tbody>
     <tfoot>
      <tr>
-        <td colspan="7">
+     	<!--  Aaron: Change colspan to 8, unless not showing assignment-->
+		<?php if ($showassigned) ?>  <td colspan="8">   
+        <?php else ?> <td colspan="7">
             <?php if($res && $num && $thisstaff->canManageTickets()){ ?>
             Select:&nbsp;
             <a id="selectAll" href="#ckb">All</a>&nbsp;&nbsp;
