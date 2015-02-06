@@ -441,7 +441,7 @@ if ($results) {
      	<!--  Aaron: Change colspan to 8, unless not showing assignment-->
 		<?php if ($showassigned) {?>  <td colspan="8">   
        <?php } else { ?> <td colspan="7"> 
-       } ?>
+       <?php } ?>
             <?php if($res && $num && $thisstaff->canManageTickets()){ ?>
             Select:&nbsp;
             <a id="selectAll" href="#ckb">All</a>&nbsp;&nbsp;
